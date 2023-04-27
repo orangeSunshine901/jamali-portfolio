@@ -26,7 +26,11 @@ h3 font size = 20px : 1.25rem
 body > div{
   width: 100vw;
   height: 100vh;
+  background-color: hsla(0, 0%, 100%, 0.81);
   background-image: url("./images/white-paper-texture.png");
+  overflow-x: hidden;
+  border-top: 2px solid black;
+  border-bottom: 8px solid black;
 }
 
 h1{
@@ -41,8 +45,14 @@ h2{
   mix-blend-mode: color-burn;
 }
 
+h3{
+  font-weight: normal;
+  padding: 0.1rem;
+  mix-blend-mode: color-burn;
+}
+
 p{
-  font-size: 18px;
+  font-size: 16px;
   mix-blend-mode: color-burn;
 }
 
@@ -52,7 +62,7 @@ p{
   width: 8%;
   position: absolute;
   top: 1vh;
-  left: 20px
+  left: 10px
 }
 
 #home-pg{
@@ -64,7 +74,7 @@ p{
 
 .coffee-stain{
   position: relative;
-  right: 5%;
+  right: 0%;
 }
 
 .coffee-stain img{
@@ -78,6 +88,7 @@ p{
   justify-content: center;
   align-items: center;
   height: 100%;
+  mix-blend-mode: color-burn;
 }
 .intro-text div{
   display: flex;
@@ -102,7 +113,7 @@ p{
   flex-direction: column;
   justify-content: flex-end;
   align-items: end;
-  height: 100vh;
+  height: 100%;
   
 }
 
@@ -112,6 +123,7 @@ p{
 
 .polaroid img{
   width: 55vh;
+  mix-blend-mode:multiply;
 }
 
 /* Page 1 */
@@ -126,20 +138,22 @@ p{
 #story-pg1{
   padding: 2rem;
   padding-right: 0;
+  padding-bottom: 0;
+}
+
+#story-pg1{
+  height: 100%;
 }
 
 .pg1-content{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .script-pg1{
-  height: 100%;
-  width: 50%;
+  width: 60vw;
   justify-self: center;
 }
 
@@ -150,6 +164,125 @@ p{
 }
 
 .placeholder{
-  width: 90%;
+  width: 80%;
   mix-blend-mode: color-burn;
 }
+
+.man-and-the-mountain{
+  width: 40vw;
+  height: 100%;
+  position: relative;
+  align-self: flex-end;
+  top: 2rem;
+}
+
+.man-and-the-mountain video{
+  width: 100%;
+}
+
+.pg2-content{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.pg2-content .script{
+  padding-left: 2rem;
+  padding-top: 2rem ;
+  width: 50vw;
+  height: 20vh;
+  z-index: 2;
+  mix-blend-mode: color-burn;
+}
+
+.man-cooking-his-ideas{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 0;
+  mix-blend-mode: color-burn;
+}
+
+.man-cooking-his-ideas img{
+  height: 100vh;
+  width: 100vw;
+}
+
+#contact-pg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 1rem;
+  z-index: 3;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.contact-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  width: auto;
+}
+
+.terminator-cat{
+  align-self: center;
+  justify-self: center;
+  padding-bottom: 8%;
+}
+
+.terminator-cat p{
+  font-size: 20px;
+  padding-block: 1rem;
+}
+
+.terminator-cat img{
+  width: 70%;
+  mix-blend-mode: color-burn;
+}
+
+.contact-details{
+  text-align: center;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+  height: 80vh;
+}
+
+.contact-me{
+  justify-self: start;
+}
+
+.contact-me h3{
+  font-size: 20px;
+  padding-block: 0.3rem;
+}
+
+.contact-me p{
+  font-size: 20px;
+  padding-block: 0.3rem;
+}
+
+.icon{
+  width: auto;
+  mix-blend-mode: color-burn;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 1rem;
+  width: auto;
+  mix-blend-mode: color-burn;
+}
+
+
