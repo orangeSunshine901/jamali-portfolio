@@ -304,6 +304,15 @@ p{
   z-index: 0;
 }
 
+.matm-web{
+  display: block;
+  width: 100%;
+}
+
+/* .matm-mobile{
+  display: none;
+} */
+
 @media screen and (max-width: 1000px){
   #story-pg1{
     padding-top: 2rem;
@@ -371,6 +380,14 @@ p{
     width: 100%;
     z-index: 0;
   }
+
+  /* .matm-web{
+    display: none;
+  }
+
+  .matm-mobile{
+    display: block;
+  } */
 }
 
 /* Page 1 */
@@ -412,6 +429,10 @@ p{
   display: none;
 }
 
+.matm-web{
+  display: none;
+}
+
 @media screen and (max-width: 1000px){
   .pg2-content{
     display: flex;
@@ -450,7 +471,9 @@ p{
   
   .mchi-mobile{
     display: block;
+    height: 97%;
   }
+
 }
 
 /* Page 2 */
