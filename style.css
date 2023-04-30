@@ -223,7 +223,6 @@ p{
   
   .lens-cap img{
     display: none;
-    width: 80%;
   }
   
   .polaroid{
@@ -240,14 +239,20 @@ p{
   .lens-cap-mobile{
     display: block;
     position: absolute;
-    bottom: 0%;
+    bottom: 0.9%;
     right: 0%;
     width: 100vw;
   }
 
   .lens-cap-mobile img{
-    width: 55%;
+    width: 40%;
     float: right;
+  }
+
+  .intro-text p{
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
   }
 }
 
@@ -355,11 +360,13 @@ p{
   
   .script-1 p:nth-child(3){
     padding-top: 1rem;
+    padding-bottom: 0.5rem;
   }
   
   .para-inner{
     width: 100%;
-    padding-left: 25%;
+    padding-inline: 10%;
+    text-align: left;
   }
   
   .para-inner h3{
