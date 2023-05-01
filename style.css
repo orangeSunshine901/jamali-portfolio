@@ -365,7 +365,7 @@ p{
   
   .para-inner{
     width: 100%;
-    padding-inline: 10%;
+    padding-inline: 20%;
     text-align: left;
   }
   
@@ -454,7 +454,7 @@ p{
   
   .pg2-content .script{
     padding-left: 1rem;
-    padding-top: 2rem ;
+    padding-top: 5rem ;
     padding-right: 1rem;
     width: auto;
     height: 30vh;

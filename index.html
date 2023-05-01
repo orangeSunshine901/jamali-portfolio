@@ -6,6 +6,8 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="./js/script.js"></script>
+  <script src="./js/playerjs.js"></script>
   <title>Meer Farhad Jamali</title>
 </head>
 <body>
@@ -40,7 +42,7 @@
       <div class="script-pg1">
         <div class="script-1">
           <h3>EXT. MOUNTAIN TOP - DAY</h3>
-          <p>A man (FARHAD) in his early 30s wearing high altitude hiking gear stands atop of a mountain taking a long breath.</p>
+          <p>A man (FARHAD) in his 30s wearing high altitude hiking gear stands on the mounataintop. His scarf billows in the crisp air. He takes a long sharp breath.</p>
             <p>The view is like something out of a photograph, serene and
             peaceful. His stance is of one mesmerised and in awe of what he sees. The mountains; ancient beyond time, disappear into the clouds around him.</p>
           <div class="para-inner">
@@ -49,11 +51,11 @@
             from the music to the lighting to the
             editing...</p>
           </div>
-          <img class="placeholder"src="./images/video-placeholder.png" alt="" srcset="">
+          <div id="player"></div>
           <!-- <video class="showreel">This is a Showreel</video> -->
           <div class="para-inner">
             <h3>FARHAD (cont.)</h3>
-            <p>...or a thought provoking drama, every great film has a story to tell.
+            <p>... every great film has a story to tell.
               I am Meer Farhad Jamali, let’s tell your story</p>
           </div>
         </div>
@@ -83,12 +85,7 @@
         <h3>INT. KITCHEN - EVENING</h3>
         <p>
           A well lit kitchen, the sound of 90s rock and sizzling oil fills the air. 
-        </p>
-        <p>
-          We see farhad at the stove, stirring the pan attentively. A plume of smoke rises.
-        </p>
-        <p>
-          On a nearby counter rests a pile of neatly cut vegetables waiting for their turn to fry.
+          Farhad stands at the stove, stirring the pan attentively. A plume of smoke rises.On a nearby counter rests a pile of neatly cut vegetables waiting for their turn to fry.
         </p>
       </div>
       <div class="man-cooking-his-ideas">
@@ -131,5 +128,14 @@
       </div>
     </div>
   </div>
+  <script>
+    var player = new Playerjs({
+      id:"player",
+      title: "Showreel",
+      file:"https://player.vimeo.com/video/796428323?h=4cbaf85847"
+    });
+  </script>
 </body>
 </html>
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/796428323?h=4cbaf85847" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
