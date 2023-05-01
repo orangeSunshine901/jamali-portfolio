@@ -334,7 +334,13 @@ p{
   z-index: 0;
 }
 
+
 @media screen and (max-width: 1000px){
+
+  #player{
+    padding: 4rem;
+  }
+
   #story-pg1{
     padding-top: 2rem;
     padding-left: 1rem;
