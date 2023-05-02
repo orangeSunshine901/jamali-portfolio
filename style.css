@@ -252,9 +252,8 @@ p{
 
   .lens-cap-mobile{
     display: block;
-    position: absolute;
-    bottom:0;
-    right: 0;
+    align-self: flex-end;
+    position: relative;
     width: 150px;
     height: 150px;
     background-image: url("./images/lens-cap-mobile.png");
