@@ -180,7 +180,7 @@ p{
   #home-pg{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
   
@@ -196,12 +196,13 @@ p{
   }
   
   .intro-text{
+    align-self: center;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 100%;
     mix-blend-mode: color-burn;
     margin-top: 4rem;
   }
