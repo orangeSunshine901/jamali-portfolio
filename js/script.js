@@ -1,13 +1,17 @@
-const video = document.getElementById("man-and-the-mountain-video")
+window.addEventListener("DOMContentLoaded", ()=>{
+  const video = document.getElementById("man-and-the-mountain-video")
+  video.load()
 
-gsap.to(".man-and-the-mountain", {
-  scrollTrigger:{
-    trigger: ".man-and-the-mountain",
-    start: "top 70%",
-    end: "bottom top",
-    onEnter: () => video.play(),
-    onLeave: () => video.load(),
-    onEnterBack: () => video.play()
+  gsap.to(".man-and-the-mountain", {
+    scrollTrigger:{
+      trigger: ".man-and-the-mountain",
+      start: "top 70%",
+      end: "bottom top",
+      onEnter: () => video.play(),
+      onLeave: () => video.load(),
+      onEnterBack: () => video.play()
+  
+    }
+  })
 
-  }
 })
