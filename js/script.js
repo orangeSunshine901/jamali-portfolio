@@ -8,10 +8,15 @@ window.addEventListener("DOMContentLoaded", ()=>{
       start: "top 70%",
       end: "bottom top",
       onEnter: () => video.play(),
-      onLeave: () => video.load(),
+      onLeave: () => {
+        if(innerWidth > "500" ){
+          video.load()
+        }},
       onEnterBack: () => video.play()
   
     }
   })
 
 })
+
+console.log(innerWidth)
