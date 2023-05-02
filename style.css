@@ -117,12 +117,24 @@ p{
   
 }
 
-.lens-cap img{
-  width: 35vh;
+.lens-cap{
+  width: 20vw;
+  height: 30vh;
+  background-image: url("./images/Mask\ Group 5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
-.polaroid img{
-  width: 55vh;
+/* .lens-cap img{
+  width: 35vh;
+} */
+
+.polaroid{
+  height: 55vh;
+  width: 30vw;
+  background-image: url("./images/Group\ 84.png");
+  background-size: cover;
   mix-blend-mode:multiply;
 }
 
@@ -221,32 +233,28 @@ p{
     z-index: 1;
   }
   
-  .lens-cap img{
+  .lens-cap{
     display: none;
   }
   
   .polaroid{
-    width: 70%;
-  }
-
-  .polaroid img{
-    float: right;
-    width: 100%;
-    height: auto;
-    mix-blend-mode:multiply;
+    width: 60vw;
+    height: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
   }
 
   .lens-cap-mobile{
     display: block;
     position: absolute;
-    bottom: 0.9%;
-    right: 0%;
-    width: 100vw;
-  }
-
-  .lens-cap-mobile img{
-    width: 40%;
-    float: right;
+    bottom:0.9%;
+    right: -3%;
+    width: 150px;
+    height: 150px;
+    background-image: url("./images/lens-cap-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .intro-text p{
@@ -303,9 +311,8 @@ p{
   text-align: center;
 }
 
-.placeholder{
-  width: 80%;
-  mix-blend-mode: color-burn;
+#player{
+  width: 97%;
 }
 
 .man-and-the-mountain{
@@ -460,7 +467,7 @@ p{
   
   .pg2-content .script{
     padding-left: 1rem;
-    padding-top: 5rem ;
+    padding-top: 10%;
     padding-right: 1rem;
     width: auto;
     height: 30vh;
@@ -488,7 +495,10 @@ p{
   
   .mchi-mobile{
     display: block;
+    background-image: url("./images/man-cooking-his-ideas-mobile.png");
     height: 100%;
+    width: 100%;
+    background-size: cover;
   }
 }
 
