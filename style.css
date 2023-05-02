@@ -111,10 +111,10 @@ p{
 .side-props{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: end;
   height: 100%;
-  
+  width: auto;
 }
 
 .lens-cap{
@@ -131,11 +131,13 @@ p{
 } */
 
 .polaroid{
-  height: 55vh;
-  width: 30vw;
+  height: 420px;
+  width: 400px;
   background-image: url("./images/Group\ 84.png");
-  background-size: cover;
+  background-size: contain;
   mix-blend-mode:multiply;
+  background-repeat: no-repeat;
+  background-position:  right center;
 }
 
 .lens-cap-mobile{
@@ -255,6 +257,7 @@ p{
     background-image: url("./images/lens-cap-mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: bottom right;
   }
 
   .intro-text p{
