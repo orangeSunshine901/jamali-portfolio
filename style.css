@@ -180,8 +180,9 @@ p{
   #home-pg{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    height: 100vh;
   }
   
   .coffee-stain{
@@ -202,9 +203,10 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    align-content: space-between;
+    height: 80%;
     mix-blend-mode: color-burn;
-    margin-top: 4rem;
+    padding-top: 0;
   }
   .intro-text div{
     display: flex;
@@ -252,7 +254,7 @@ p{
     display: block;
     position: absolute;
     bottom:0;
-    right: 0%;
+    right: 0;
     width: 150px;
     height: 150px;
     background-image: url("./images/lens-cap-mobile.png");
@@ -264,7 +266,7 @@ p{
   .intro-text p{
     position: absolute;
     left: 2%;
-    bottom: 1%;
+    bottom: 0.5%;
   }
 }
 
