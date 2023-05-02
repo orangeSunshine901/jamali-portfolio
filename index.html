@@ -6,6 +6,9 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
+  <script src="./js/script.js" defer></script>
   <script src="./js/playerjs.js"></script>
   <title>Meer Farhad Jamali</title>
 </head>
@@ -62,8 +65,8 @@
         <div>
           <h3>CUT TO:</h3>
         </div>
-        <div class="matm-container">
-          <video width="auto" height="auto" autoplay loop muted playsinline>
+        <div class="man-and-the-mountain-container">
+          <video id="man-and-the-mountain-video" width="auto" height="auto" loop muted playsinline>
             <source 
       src="./images/the-man-vp9-chrome.webm" 
       type="video/webm">
@@ -135,5 +138,6 @@
       file:"https://vimeo.com/817072894"
     });
   </script>
+  
 </body>
 </html>
