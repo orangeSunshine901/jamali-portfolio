@@ -207,6 +207,7 @@ p{
     height: 80%;
     mix-blend-mode: color-burn;
     padding-top: 0;
+    padding-top: 70%;
   }
   .intro-text div{
     display: flex;
@@ -258,8 +259,8 @@ p{
     height: 150px;
     background-image: url("./images/lens-cap-mobile.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position:  right bottom
+    background-size: cover;
+    background-position:  right bottom;
   }
 
   .intro-text p{
