@@ -251,14 +251,14 @@ p{
   .lens-cap-mobile{
     display: block;
     position: absolute;
-    bottom:0.9%;
-    right: -3%;
+    bottom:0;
+    right: 0%;
     width: 150px;
     height: 150px;
     background-image: url("./images/lens-cap-mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom right;
+    background-position:  right bottom
   }
 
   .intro-text p{
