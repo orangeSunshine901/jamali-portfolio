@@ -8,6 +8,7 @@ h3 font size = 20px : 1.25rem
 */
 
 html {
+  overflow-x: hidden;
   scrollbar-width: thin;
 
 }
@@ -28,7 +29,6 @@ html {
   box-sizing: border-box;
   font-family: Courier Std,'Courier New', Courier, monospace;
   scrollbar-color: black white;
-  overflow-x: hidden;
 }
 
 
@@ -38,6 +38,7 @@ body > div{
   height: 100vh;
   background-color: hsla(0, 0%, 100%, 0.81);
   background-image: url("./images/white-paper-texture.png");
+  overflow-x: hidden;
   border-top: 2px solid black;
   border-bottom: 8px solid black;
   scroll-snap-type: both proximity;
