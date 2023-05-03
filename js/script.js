@@ -18,5 +18,3 @@ window.addEventListener("DOMContentLoaded", ()=>{
   })
 
 })
-
-console.log(innerWidth)

@@ -71,7 +71,7 @@
           <h3>CUT TO:</h3>
         </div>
         <div class="man-and-the-mountain-container">
-          <video id="man-and-the-mountain-video" width="auto" height="auto" muted playsinline preload="auto">
+          <video id="man-and-the-mountain-video" width="auto" height="auto" muted playsinline loop preload="auto">
             <source 
       src="./images/the-man-vp9-chrome.webm" 
       type="video/webm">
@@ -140,8 +140,12 @@
     var player = new Playerjs({
       id:"player",
       title: "Showreel",
-      file:"https://vimeo.com/817072894"
+      file:"https://vimeo.com/817072894",
+      end:92
     });
+
+
+
   </script>
   
 </body>
