@@ -58,7 +58,6 @@
             editing...</p>
           </div>
           <div id="player"></div>
-          <!-- <video class="showreel">This is a Showreel</video> -->
           <div class="para-inner">
             <h3>FARHAD (cont.)</h3>
             <p>... every great film has a story to tell.
@@ -82,7 +81,6 @@
         </div>
       </div>
     </div>
-       
   </div>
   <div id="story-pg2">
     <!-- <div class="staple-pin"></div> -->
@@ -95,11 +93,24 @@
         </p>
       </div>
       <div class="man-cooking-his-ideas">
-        <!-- <video>
-        </video> -->
-        <img class="mchi-web" src="./images/man-cooking-his-idea.png" alt="man-cooking-his-ideas" srcset="">
-        <div class="mchi-mobile">
+        <video class="mchi-web" id="man-cooking-video" width="auto" height="auto" muted playsinline loop preload="auto">
+          <source 
+    src="./images/man-cooking-vp9-chrome.webm" 
+    type="video/webm">
+      <source 
+    src="./images/man-cooking-hevc-safari.mp4" 
+    type='video/mp4; codecs="hvc1"'>
+        </video>
 
+        <div class="mchi-mobile">
+          <video id="man-cooking-video" width="auto" height="auto" muted playsinline loop autoplay preload="auto">
+            <source 
+      src="./images/man-cooking-his-ideas-mobile-vp9-chrome.webm" 
+      type="video/webm">
+        <source 
+      src="./images/man-cooking-his-ideas-mobile-hevc-safari.mp4" 
+      type='video/mp4; codecs="hvc1"'>
+          </video>
         </div>
       </div>
     </div>
@@ -108,20 +119,37 @@
     <h2>The End</h2>
     <div class="contact-section">
       <div class="icon">
-        <img src="./images/cv-icon.png" alt="Download my cv from here" width="53px">
+        <a href="./MEER FARHAD JAMALI_CV.docx.pdf" target="_blank">    
+          <img src="./images/cv-icon.png" alt="Download my cv from here" width="53px">
+        </a>
       </div>
       <div class="contact-details">
-          <div class="terminator-cat">
-            <img src="./images/cool-cat.png" alt="this is a cool cat shooting you" srcset="">
-            <!-- <video src=""></video> -->
+          <div class="cool-cat">
+            <!-- <img src="./images/cool-cat.png" alt="this is a cool cat shooting you" srcset=""> -->
+            <video id="cool-cat" width="auto" height="auto" muted playsinline loop preload="auto">
+              <source 
+        src="./images/cool-cat-vp9-chrome.webm" 
+        type="video/webm">
+          <source 
+        src="./images/cool-cat-hevc-safari.mp4" 
+        type='video/mp4; codecs="hvc1"'>
+            </video>
             
             <p>“Hasta la’vista, baby!”</p>
           </div>
           <div class="icons-mobile">
-            <img src="./images/cv-icon.png" alt="Download my cv from here" width="53px">
-            <img src="./images/instagram-icon.png" alt="Download my cv from here" width="53px">
-            <img src="./images/youtube-icon.png" alt="Download my cv from here" width="53px">
-            <img src="./images/vimeo-icon.png" alt="Download my cv from here" width="53px">
+            <a class="contact-button" href="./MEER FARHAD JAMALI_CV.docx.pdf" target="_blank">    
+              <img src="./images/cv-icon.png" alt="Download my cv from here" width="53px">
+            </a>
+            <a class="contact-button" href="https://www.instagram.com/meerfarhadjamali/" target="_blank">    
+              <img src="./images/instagram-icon.png" alt="My Instagram" width="53px">
+            </a>
+            <a class="contact-button" href="https://www.youtube.com/@MeerFarhadJamali" target="_blank">
+              <img src="./images/youtube-icon.png" alt="Here's my Instagram" width="53px">
+            </a>
+            <a class="contact-button" href="https://vimeo.com/meerjamali" target="_blank">
+              <img src="./images/vimeo-icon.png" alt="Here's my Vimeo account" width="53px">
+            </a>
           </div>
           <div class="contact-me">
             <h3>Contact me on:</h3>
@@ -130,9 +158,15 @@
           </div>
         </div>
       <div class="icons">
-        <img src="./images/instagram-icon.png" alt="Download my cv from here" width="53px">
-        <img src="./images/youtube-icon.png" alt="Download my cv from here" width="53px">
-        <img src="./images/vimeo-icon.png" alt="Download my cv from here" width="53px">
+        <a class="contact-button" href="https://www.instagram.com/meerfarhadjamali/" target="_blank">    
+          <img src="./images/instagram-icon.png" alt="My Instagram" width="53px">
+        </a>
+        <a class="contact-button" href="https://www.youtube.com/@MeerFarhadJamali" target="_blank">
+          <img src="./images/youtube-icon.png" alt="Here's my Instagram" width="53px">
+        </a>
+        <a class="contact-button" href="https://vimeo.com/meerjamali" target="_blank">
+          <img src="./images/vimeo-icon.png" alt="Here's my Vimeo account" width="53px">
+        </a>
       </div>
     </div>
   </div>

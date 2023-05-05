@@ -177,7 +177,7 @@ p{
   }
   
   p{
-    font-size: 12px;
+    font-size: 14px;
     mix-blend-mode: color-burn;
   }
 
@@ -457,8 +457,8 @@ p{
 .pg2-content .script{
   padding-left: 2rem;
   padding-top: 2rem ;
-  width: 50vw;
-  height: 20vh;
+  width: 45vw;
+  height: 25vh;
   z-index: 2;
   mix-blend-mode: color-burn;
 }
@@ -468,12 +468,11 @@ p{
   width: 100vw;
   position: absolute;
   z-index: 0;
-  mix-blend-mode: color-burn;
 }
 
 .mchi-web{
-  height: 100vh;
-  width: 100vw;
+  float: right;
+  height: 100%;
 }
 
 .mchi-mobile{
@@ -507,7 +506,6 @@ p{
     width: 100%;
     position: relative;
     z-index: 0;
-    mix-blend-mode: color-burn;
     display: flex;
     justify-content: flex-start;
   }
@@ -518,10 +516,13 @@ p{
   
   .mchi-mobile{
     display: block;
-    background-image: url("./images/man-cooking-his-ideas-mobile.png");
     height: 100%;
     width: 100%;
-    background-size: cover;
+  }
+
+  .mchi-mobile video{
+    float: right;
+    height: 100%;
   }
 }
 
@@ -548,19 +549,19 @@ p{
   width: auto;
 }
 
-.terminator-cat{
+.cool-cat{
   align-self: center;
   justify-self: center;
-  padding-bottom: 8%;
+  padding-bottom: 1%;
 }
 
-.terminator-cat p{
+.cool-cat p{
   font-size: 20px;
   padding-block: 1rem;
 }
 
-.terminator-cat img{
-  width: 70%;
+.cool-cat video{
+  width: 100%;
   mix-blend-mode: color-burn;
 }
 
@@ -589,9 +590,14 @@ p{
   padding-block: 0.3rem;
 }
 
-.icon{
-  width: auto;
-  mix-blend-mode: color-burn;
+.icon a{
+  display: block;
+  transition-duration: 500ms;
+}
+
+.icon img{
+  box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.265);
+  border-radius: 50%;
 }
 
 .icons{
@@ -600,12 +606,39 @@ p{
   align-items: flex-end;
   row-gap: 1rem;
   width: auto;
-  mix-blend-mode: color-burn;
+}
+
+.icons a{
+  transition-duration: 500ms;
+}
+
+.icons img{
+  box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.265);
+  border-radius: 50%;
+}
+
+.contact-button{
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.contact-button :hover{
+  cursor: pointer;
+}
+
+.icon :hover{
+  transform: scale(1.1);
+}
+
+.icons :hover{
+  transform: scale(1.1);
 }
 
 .icons-mobile{
   display: none;
 }
+
 
 @media screen and (max-width: 1000px){
 
@@ -628,18 +661,18 @@ p{
     width: auto;
   }
   
-  .terminator-cat{
+  .cool-cat{
     align-self: center;
     justify-self: center;
     padding-bottom: 0%;
   }
   
-  .terminator-cat p{
+  .cool-cat p{
     font-size: 20px;
     padding-block: 4;
   }
   
-  .terminator-cat img{
+  .cool-cat img{
     width: 70%;
     mix-blend-mode: color-burn;
   }
@@ -689,11 +722,16 @@ p{
     padding-bottom: 1rem;
   }
 
-  .icons-mobile img{
-    width: 20%;
+  .icons-mobile a{
+    border-radius: 50%;
+    display: block;
     padding-inline: 0.5rem;
+    
   }
-
+  .icons-mobile img{
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.265);
+    border-radius: 50%;
+  }
 }
 
 
