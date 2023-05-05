@@ -522,7 +522,7 @@ p{
 
   .mchi-mobile video{
     float: right;
-    height: 100%;
+    width: 100%;
   }
 }
 
@@ -666,15 +666,15 @@ p{
     justify-self: center;
     padding-bottom: 0%;
   }
+
+  .cool-cat video{
+    mix-blend-mode: normal;
+    width: 75%;
+  }
   
   .cool-cat p{
     font-size: 20px;
     padding-block: 4;
-  }
-  
-  .cool-cat img{
-    width: 70%;
-    mix-blend-mode: color-burn;
   }
   
   .contact-details{

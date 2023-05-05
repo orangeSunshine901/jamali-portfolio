@@ -18,11 +18,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
     }
   })
   const videoTwo = document.getElementById("man-cooking-video")
+  const videoTwoMobile = document.getElementById("man-cooking-video-mobile")
 
   gsap.to(".man-cooking-his-ideas", {
     scrollTrigger:{
       trigger: ".man-cooking-his-ideas",
-      start: "top 10%",
+      start: "top 70%",
       end: "bottom 80%",
       onEnter: () => videoTwo.play(),
       onLeave: () => {
@@ -30,6 +31,20 @@ window.addEventListener("DOMContentLoaded", ()=>{
           videoTwo.pause()
         }},
       onEnterBack: () => videoTwo.play()
+  
+    }
+  })
+  gsap.to(".mchi-mobile", {
+    scrollTrigger:{
+      trigger: ".mchi-mobile",
+      start: "top 70%",
+      end: "bottom 80%",
+      onEnter: () => videoTwoMobile.play(),
+      onLeave: () => {
+        if(innerWidth > "500" ){
+          videoTwoMobile.pause()
+        }},
+      onEnterBack: () => videoTwoMobile.play()
   
     }
   })
