@@ -376,11 +376,9 @@ p{
     padding-left: 1rem;
     padding-right: 0rem;
     padding-bottom: 0rem;
-  }
-  
-  #story-pg1{
     height: 100%;
   }
+  
   
   .pg1-content{
     display: flex;
@@ -480,6 +478,14 @@ p{
 }
 
 @media screen and (max-width: 1000px){
+  
+  #story-pg2{
+    padding-left: 1rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    height: 100%;
+  }
+  
   .pg2-content{
     display: flex;
     justify-content: flex-start;
