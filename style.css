@@ -69,6 +69,22 @@ p{
 
 /* Home page */
 
+.type-writer {
+
+  /* Typewriter blink animation */
+  border-right: 6px solid #000000;
+  padding-right: 8px;
+  animation: blink 0.75s infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes blink {
+  from {
+    border-right: 6px solid transparent;
+  }
+}
+
+
 .staple-pin{
   width: 5%;
   position: absolute;
@@ -89,7 +105,7 @@ p{
 }
 
 .coffee-stain img{
-  width: 28vw;
+  width: 25vw;
 }
 
 .intro-text{
@@ -142,6 +158,7 @@ p{
 } */
 
 .polaroid{
+  position: relative;
   height: 420px;
   width: 400px;
   background-image: url("./images/Group\ 84.png");
@@ -149,6 +166,30 @@ p{
   mix-blend-mode:multiply;
   background-repeat: no-repeat;
   background-position:  right center;
+}
+
+.polaroid-tape{
+  height: 40%;
+  width: 40%;
+  background-image: url("./images/polaroid-tape.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 10;
+  left: 35%;
+  top: 0;
+}
+
+.shadow-and-jamali{
+  height: 85%;
+  width: 85%;
+  background-image: url("./images/jamali-and-shadow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 11%;
+  left: 15%;
+  mix-blend-mode: lighten;
 }
 
 .mobile-home-bottom{
@@ -255,11 +296,35 @@ p{
   }
   
   .polaroid{
-    width: 60vw;
-    height: 40vh;
+    position: relative;
+    width: 300px;
+    height: 300px;
     background-size: contain;
     background-repeat: no-repeat;
-    
+  }
+
+  .polaroid-tape{
+    height: 40%;
+    width: 40%;
+    background-image: url("./images/polaroid-tape.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 10;
+    left: 35%;
+    top: 0;
+  }
+  
+  .shadow-and-jamali{
+    position: absolute;
+    width: 81%;
+    height: 81%;
+    top: 4.2%;
+    left: 18.5%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
   }
 
   .intro-text p{
@@ -568,7 +633,6 @@ p{
 
 .cool-cat video{
   width: 100%;
-  mix-blend-mode: color-burn;
 }
 
 .contact-details{
