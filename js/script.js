@@ -104,7 +104,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
   })
 
   const videoThree = document.getElementById("cool-cat")
-
+  videoThree.load()
   gsap.to(".contact-section", {
     scrollTrigger:{
       trigger: ".contact-section",
