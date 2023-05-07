@@ -108,7 +108,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
   gsap.to(".contact-section", {
     scrollTrigger:{
       trigger: ".contact-section",
-      start: "top 10%",
+      start: "top 70%",
       onEnter: () => videoThree.play()
   
     }
@@ -123,7 +123,7 @@ const  animation = ()=>{
   let text = "";
   let count = 0;
   let index = 0;
-  let speed = 200;
+  let speed = 300;
   let isDeleting = false;
   
     (type = () => {
@@ -157,12 +157,12 @@ const  animation = ()=>{
       setTimeout(()=> {
         document.querySelector("#intro-headline").classList.remove("type-writer")
       
-      },3000)
+      },3500)
     })();
   }
 
 gsap.timeline()
-    .add(animation(), {})
+    .add(setTimeout(animation(), 5000))
     .from("#writer-text",{opacity:0, ease: "power2.out", delay: 4, duration: 1})
     .from("#developer-text",{opacity:0, ease: "power2.out", duration: 1})
     .from(".shadow-and-jamali", {opacity:0, ease: "power0.out", duration: 1})

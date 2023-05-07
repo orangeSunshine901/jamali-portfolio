@@ -41,7 +41,6 @@ body > div{
   overflow-x: hidden;
   border-top: 2px solid black;
   border-bottom: 8px solid black;
-  scroll-snap-type: both proximity;
 }
 
 h1{
@@ -75,7 +74,6 @@ p{
   border-right: 6px solid #000000;
   padding-right: 8px;
   animation: blink 0.75s infinite;
-  animation-fill-mode: backwards;
 }
 
 @keyframes blink {
