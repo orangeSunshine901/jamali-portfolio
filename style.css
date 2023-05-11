@@ -37,7 +37,7 @@ body > div{
   width: 100vw;
   height: 100vh;
   background-color: hsla(0, 0%, 100%, 0.81);
-  background-image: url("./images/white-paper-texture.png");
+  background-image: url("./images/white-paper-texture.webp");
   overflow-x: hidden;
   border-top: 2px solid black;
   border-bottom: 8px solid black;
@@ -218,6 +218,10 @@ p{
   p{
     font-size: 14px;
     mix-blend-mode: color-burn;
+  }
+
+  body > div{
+    background-image: url("./images/mobile-bg.png");
   }
 
   .staple-pin{

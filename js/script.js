@@ -64,7 +64,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
       onEnter: () => videoOne.play(),
       onLeave: () => {
         if(innerWidth > "500" ){
-          videoOne.load()
+          videoOne.stop()
 
         }},
       onEnterBack: () => videoOne.play()
@@ -138,6 +138,9 @@ const  animation = ()=>{
     
         if (text.length === currentWord.length) {
           isDeleting = false;
+          setTimeout(()=> {
+            document.querySelector("#intro-headline").classList.remove("type-writer")
+          },3000)
         }
       } else {
         speed = 150;
@@ -154,20 +157,16 @@ const  animation = ()=>{
     
     
       setTimeout(() => type(), speed);
-      setTimeout(()=> {
-        document.querySelector("#intro-headline").classList.remove("type-writer")
-      
-      },3500)
     })();
   }
 
 gsap.timeline()
-    .add(setTimeout(animation(), 5000))
+    .add(animation())
     .from("#writer-text",{opacity:0, ease: "power2.out", delay: 4, duration: 1})
     .from("#developer-text",{opacity:0, ease: "power2.out", duration: 1})
     .from(".shadow-and-jamali", {opacity:0, ease: "power0.out", duration: 1})
     .from(".lens-cap",{xPercent:50, ease: "power2.out"})
-    .from(".copyright",{opacity:0, ease: "power2.out", duration: 1})
+    .from(".copyright",{opacity:0, ease: "power2.out", duration: 0.8})
     .from(".lens-cap-mobile",{xPercent:50, ease: "power2.out"})
-    .from(".mobile-copyright",{opacity:0, ease: "power2.out", duration: 1})
+    .from(".mobile-copyright",{opacity:0, ease: "power2.out"})
 
