@@ -74,6 +74,8 @@ p{
   border-right: 6px solid #000000;
   padding-right: 8px;
   animation: blink 0.75s infinite;
+  animation-delay: 1s;
+  -moz-animation-delay: 1s;
 }
 
 @keyframes blink {
@@ -595,7 +597,7 @@ p{
 
   .mchi-mobile video{
     float: right;
-    height: 100%;
+    width: 100%;
   }
 }
 

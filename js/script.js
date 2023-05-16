@@ -114,59 +114,63 @@ window.addEventListener("DOMContentLoaded", ()=>{
     }
   })
 
+  
+
 })
 
-const  animation = ()=>{
+window.addEventListener("load", () => {
 
-  const textData = "My Portfolio";
-  let currentWord = "";
-  let text = "";
-  let count = 0;
-  let index = 0;
-  let speed = 300;
-  let isDeleting = false;
-  
-    (type = () => {
-      // if (count === textData.length) {
-      //   count = 0;
-      // }
+  const  animation = ()=>{
+
+    const textData = "My Portfolio";
+    let currentWord = "";
+    let text = "";
+    let count = 0;
+    let index = 0;
+    let speed = 300;
+    let isDeleting = false;
     
-      currentWord = textData;
-    
-      if (!isDeleting) {
-        text = currentWord.slice(0, ++index);
-    
-        if (text.length === currentWord.length) {
-          isDeleting = false;
-          setTimeout(()=> {
-            document.querySelector("#intro-headline").classList.remove("type-writer")
-          },3000)
+      (type = () => {
+        // if (count === textData.length) {
+        //   count = 0;
+        // }
+      
+        currentWord = textData;
+      
+        if (!isDeleting) {
+          text = currentWord.slice(0, ++index);
+      
+          if (text.length === currentWord.length) {
+            isDeleting = false;
+            setTimeout(()=> {
+              document.querySelector("#intro-headline").classList.remove("type-writer")
+            },3000)
+          }
+        } else {
+          speed = 150;
+          text = currentWord.slice(0, --index);
+      
+          if (text.length === 0) {
+            isDeleting = false;
+            count++;
+            speed = 400;
+          }
         }
-      } else {
-        speed = 150;
-        text = currentWord.slice(0, --index);
-    
-        if (text.length === 0) {
-          isDeleting = false;
-          count++;
-          speed = 400;
-        }
-      }
-    
-      document.querySelector(".type-writer").textContent = text;
-    
-    
-      setTimeout(() => type(), speed);
-    })();
-  }
+      
+        document.querySelector(".type-writer").textContent = text;
+      
+      
+        setTimeout(() => type(), speed);
+      })();
+    }
 
-gsap.timeline()
-    .add(animation())
-    .from("#writer-text",{opacity:0, ease: "power2.out", delay: 4, duration: 1})
-    .from("#developer-text",{opacity:0, ease: "power2.out", duration: 1})
-    .from(".shadow-and-jamali", {opacity:0, ease: "power0.out", duration: 1})
-    .from(".lens-cap",{xPercent:50, ease: "power2.out"})
-    .from(".copyright",{opacity:0, ease: "power2.out", duration: 0.8})
-    .from(".lens-cap-mobile",{xPercent:50, ease: "power2.out"})
-    .from(".mobile-copyright",{opacity:0, ease: "power2.out"})
-
+  gsap.timeline()
+      .add(animation())
+      .from("#writer-text",{opacity:0, ease: "power2.out", delay: 4})
+      .from("#developer-text",{opacity:0, ease: "power2.out"})
+      .from(".shadow-and-jamali", {opacity:0, ease: "power0.out"})
+      .from(".lens-cap",{xPercent:50, ease: "power2.out"})
+      .from(".copyright",{opacity:0, ease: "power2.out", duration: 0.8})
+      .from(".lens-cap-mobile",{xPercent:50, ease: "power2.out"})
+      .from(".mobile-copyright",{opacity:0, ease: "power2.out"})
+})
