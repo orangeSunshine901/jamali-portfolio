@@ -1,56 +1,5 @@
 window.addEventListener("DOMContentLoaded", ()=>{
   
-
-
-
-
-// Work in progress
-
-// const  animation1 = ()=>{
-
-//   const textData = "Written by<br>Meer Farhad Jamali";
-//   let currentWord = "";
-//   let text = "";
-//   let count = 0;
-//   let index = 0;
-//   let speed = 100;
-//   let isDeleting = false;
-  
-//     (type = () => {
-//       // if (count === textData.length) {
-//       //   count = 0;
-//       // }
-    
-//       currentWord = textData;
-    
-//       if (!isDeleting) {
-//         text = currentWord.slice(0, ++index);
-    
-//         if (text.length === currentWord.length) {
-//           isDeleting = false;
-//         }
-//       } else {
-//         speed = 150;
-//         text = currentWord.slice(0, --index);
-    
-//         if (text.length === 0) {
-//           isDeleting = false;
-//           count++;
-//           speed = 400;
-//         }
-//       }
-    
-//       document.querySelector(".type-writer1").innerHTML = text;
-    
-    
-//       setTimeout(() => type(), speed);
-//     })();
-//     setTimeout(()=> {
-//       document.querySelector("#writer-text").classList.remove("type-writer1")
-  
-//     },5000)
-//   }
-
   const videoOne = document.getElementById("man-and-the-mountain-video")
   videoOne.load()
 
@@ -73,7 +22,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
   })
   const videoTwo = document.getElementById("man-cooking-video")
   const videoTwoMobile = document.getElementById("man-cooking-video-mobile")
-
+  videoTwo.load()
   gsap.to(".man-cooking-his-ideas", {
     scrollTrigger:{
       trigger: ".man-cooking-his-ideas",

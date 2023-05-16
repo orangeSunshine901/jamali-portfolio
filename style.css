@@ -568,6 +568,7 @@ p{
     padding-right: 1rem;
     width: auto;
     height: 30vh;
+    max-height: 30vh;
     z-index: 2;
     mix-blend-mode: color-burn;
   }
@@ -578,6 +579,7 @@ p{
   
   .man-cooking-his-ideas{
     height: 70vh;
+    max-height: 70vh;
     width: 100%;
     position: relative;
     z-index: 0;
@@ -599,6 +601,7 @@ p{
   .mchi-mobile video{
     float: right;
     width: 100%;
+    height: 100%;
   }
 }
 
