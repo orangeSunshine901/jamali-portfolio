@@ -10,6 +10,7 @@ h3 font size = 20px : 1.25rem
 html {
   overflow-x: hidden;
   scrollbar-width: thin;
+  scroll-snap-type: y mandatory;
 
 }
 
@@ -32,7 +33,6 @@ html {
 }
 
 
-
 body > div{
   width: 100vw;
   height: 100vh;
@@ -41,6 +41,7 @@ body > div{
   overflow-x: hidden;
   border-top: 2px solid black;
   border-bottom: 8px solid black;
+  scroll-snap-align: start;
 }
 
 h1{
@@ -224,6 +225,7 @@ p{
 
   body > div{
     background-image: url("./images/mobile-bg.png");
+    scroll-snap-align: none;
   }
 
   .staple-pin{
@@ -665,14 +667,25 @@ p{
   padding-block: 0.3rem;
 }
 
+
 .icon a{
   display: block;
-  transition-duration: 500ms;
+  text-decoration: none;
+  text-align: center;
 }
 
 .icon img{
   box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.265);
   border-radius: 50%;
+  transition-duration: 300ms;
+}
+
+.icon p{
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  line-height: 15px;
 }
 
 .icons{
@@ -690,6 +703,7 @@ p{
 .icons img{
   box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.265);
   border-radius: 50%;
+  transition-duration: 300ms;
 }
 
 .contact-button{
@@ -702,11 +716,11 @@ p{
   cursor: pointer;
 }
 
-.icon :hover{
+.icon img:hover{
   transform: scale(1.1);
 }
 
-.icons :hover{
+.icons img:hover{
   transform: scale(1.1);
 }
 
