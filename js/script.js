@@ -115,7 +115,7 @@ window.addEventListener("load", () => {
 
   gsap.timeline()
       .add(animation())
-      .from("#writer-text",{opacity:0, ease: "power2.out", delay: 4})
+      .from("#writer-text",{opacity:0, ease: "power2.out", delay: 2})
       .from("#developer-text",{opacity:0, ease: "power2.out"})
       .from(".shadow-and-jamali", {opacity:0, ease: "power0.out"})
       .from(".lens-cap",{xPercent:50, ease: "power2.out"})
