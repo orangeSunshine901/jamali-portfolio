@@ -76,7 +76,7 @@ window.addEventListener("load", () => {
     let text = "";
     let count = 0;
     let index = 0;
-    let speed = 300;
+    let speed = 100;
     let isDeleting = false;
     
       (type = () => {
